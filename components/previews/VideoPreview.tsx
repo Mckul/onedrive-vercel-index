@@ -111,16 +111,7 @@ const VideoPreview: FC<{ file: OdFileObject }> = ({ file }) => {
         ) : loading && isFlv ? (
           <Loading loadingText={t('Loading FLV extension...')} />
         ) : (
-          <VideoPlayer
-            videoName={file.name}
-            videoUrl={videoUrl}
-            width={file.video?.width}
-            height={file.video?.height}
-            thumbnail={thumbnail}
-            subtitle={subtitle}
-            isFlv={isFlv}
-            mpegts={mpegts}
-          />
+          
         )}
       </PreviewContainer>
 
