@@ -10,7 +10,7 @@ import SwitchLayout from '../components/SwitchLayout'
 
 export default function Home() {
   return (
-    <div style="background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Ffree4kwallpapers.com%2Fanime%2Fanime-wallpaper--NRx6&psig=AOvVaw1C0hBOeKABI179zFJFXw9x&ust=1649624347716000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCLjynfPuh_cCFQAAAAAdAAAAABAE')" className="flex min-h-screen flex-col items-center justify-center bg-white dark:bg-gray-900">
+    <div className="flex min-h-screen flex-col items-center justify-center bg-white dark:bg-gray-900">
       <Head>
         <title>{siteConfig.title}</title>
       </Head>
