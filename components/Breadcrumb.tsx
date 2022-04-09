@@ -18,4 +18,4 @@ const HomeCrumb = () => {
 }
 
 
-export default Homecrumb
+export default HomeCrumb
