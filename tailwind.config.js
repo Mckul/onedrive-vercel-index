@@ -6,6 +6,9 @@ module.exports = {
   mode: 'jit',
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    backgroundImage: {
+        'animage': "url('https://wallpapercave.com/wp/wp6168725.jpg')"
+      },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -24,9 +27,7 @@ module.exports = {
       orange: colors.orange,
     },
     extend: {
-      backgroundImage: {
-        'animage': "url('https://free4kwallpapers.com/uploads/originals/2019/07/17/anime-wallpaper.jpg')"
-      },
+      
       fontFamily: {
         sans: [`"${siteConfig.googleFontSans}"`, '"Noto Sans SC"', ...defaultTheme.fontFamily.sans],
         mono: [`"${siteConfig.googleFontMono}"`, ...defaultTheme.fontFamily.mono]
