@@ -21,10 +21,7 @@ export default function Folders() {
       <main className="flex w-full flex-1 flex-col bg-gray-50 dark:bg-gray-800">
         <Navbar />
         <div className="mx-auto w-full max-w-5xl p-4">
-          <nav className="mb-4 flex items-center justify-between space-x-3 pl-1">
-            <HomeCrumb/>
-            <SwitchLayout />
-          </nav>
+          
          <FileListing query={query}/>
         </div>
       </main>
