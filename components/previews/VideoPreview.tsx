@@ -132,39 +132,7 @@ const VideoPreview: FC<{ file: OdFileObject }> = ({ file }) => {
             btnText={t('Download')}
             btnIcon="file-download"
           />
-     <!--
-          <DownloadButton
-            onClickCallback={() => {
-              clipboard.copy(`${getBaseUrl()}/api/raw/?path=${asPath}${hashedToken ? `&odpt=${hashedToken}` : ''}`)
-              toast.success(t('Copied direct link to clipboard.'))
-            }}
-            btnColor="pink"
-            btnText={t('Copy direct link')}
-            btnIcon="copy"
-          />
-          <DownloadButton
-            onClickCallback={() => setMenuOpen(true)}
-            btnColor="teal"
-            btnText={t('Customise link')}
-            btnIcon="pen"
-          />
-
-          <DownloadButton
-            onClickCallback={() => window.open(`iina://weblink?url=${getBaseUrl()}${videoUrl}`)}
-            btnText="IINA"
-            btnImage="/players/iina.png"
-          />
-          <DownloadButton
-            onClickCallback={() => window.open(`vlc://${getBaseUrl()}${videoUrl}`)}
-            btnText="VLC"
-            btnImage="/players/vlc.png"
-          />
-          <DownloadButton
-            onClickCallback={() => window.open(`potplayer://${getBaseUrl()}/${videoUrl}`)}
-            btnText="PotPlayer"
-            btnImage="/players/potplayer.png"
-          />
--->
+     
         </div>
       </DownloadBtnContainer>
     </>
