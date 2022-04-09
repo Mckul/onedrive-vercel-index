@@ -132,6 +132,7 @@ const VideoPreview: FC<{ file: OdFileObject }> = ({ file }) => {
             btnText={t('Download')}
             btnIcon="file-download"
           />
+     <!--
           <DownloadButton
             onClickCallback={() => {
               clipboard.copy(`${getBaseUrl()}/api/raw/?path=${asPath}${hashedToken ? `&odpt=${hashedToken}` : ''}`)
@@ -163,6 +164,7 @@ const VideoPreview: FC<{ file: OdFileObject }> = ({ file }) => {
             btnText="PotPlayer"
             btnImage="/players/potplayer.png"
           />
+-->
         </div>
       </DownloadBtnContainer>
     </>
