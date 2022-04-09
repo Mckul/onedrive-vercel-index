@@ -10,7 +10,7 @@ import SwitchLayout from '../components/SwitchLayout'
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-red dark:bg-red-900">
+    <div className="flex min-h-screen flex-col items-center justify-center bg-red dark:bg-grey-900">
       <Head>
         <title>{siteConfig.title}</title>
       </Head>
