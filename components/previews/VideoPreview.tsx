@@ -105,16 +105,7 @@ const VideoPreview: FC<{ file: OdFileObject }> = ({ file }) => {
   return (
     <>
       <CustomEmbedLinkMenu path={asPath} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <PreviewContainer>
-        {error ? (
-          <FourOhFour errorMsg={error.message} />
-        ) : loading && isFlv ? (
-          <Loading loadingText={t('Loading FLV extension...')} />
-        ) : (
-          <VideoPlayer
-            />
-        )}
-      </PreviewContainer>
+      
 
       <DownloadBtnContainer>
         <div className="flex flex-wrap justify-center gap-2">
