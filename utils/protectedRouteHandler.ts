@@ -44,7 +44,7 @@ export function matchProtectedRoute(route: string): string {
       if (
         route === r
         )
-      ) 
+       
       {
         authTokenPath = r
         break
