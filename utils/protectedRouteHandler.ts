@@ -40,15 +40,12 @@ export function matchProtectedRoute(route: string): string {
 
   for (const r of protectedRoutes) {
     // protected route array could be empty
-    if (r) {
-      if (
-        route.startsWith(
-          r
-            .split('/')
-//            .map(p => encodeURIComponent(p))
-            .join('/')
-        )
-      ) {
+if (r) {
+    //   if (
+    //     route.startsWith(r.split('/').map(p => encodeURIComponent(p)).join('/')
+    //     )
+    //   ) 
+      {
         authTokenPath = r
         break
       }
