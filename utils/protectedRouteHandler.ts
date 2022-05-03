@@ -36,20 +36,20 @@ export function compareHashedToken({
 
 export function matchProtectedRoute(route: string): string {
   const protectedRoutes: string[] = siteConfig.protectedRoutes
-  let authTokenPath = ''
+  let authTokenPath = '/Public'
 
-  for (const r of protectedRoutes) {
-    // protected route array could be empty
-if (r) {
-    //   if (
-    //     route.startsWith(r.split('/').map(p => encodeURIComponent(p)).join('/')
-    //     )
-    //   ) 
-      {
-        authTokenPath = r
-        break
-      }
-    }
-  }
+//   for (const r of protectedRoutes) {
+//     // protected route array could be empty
+//     if (r) {
+//       if (
+//         route.startsWith(r.split('/').map(p => encodeURIComponent(p)).join('/')
+//         )
+//       ) 
+//       {
+//         authTokenPath = r
+//         break
+//       }
+//     }
+//   }
   return authTokenPath
 }
