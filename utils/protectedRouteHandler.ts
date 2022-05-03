@@ -45,7 +45,7 @@ export function matchProtectedRoute(route: string): string {
         route.startsWith(
           r
             .split('/')
-            .map(p => encodeURIComponent(p))
+//            .map(p => encodeURIComponent(p))
             .join('/')
         )
       ) {
