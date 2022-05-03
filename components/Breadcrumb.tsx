@@ -8,7 +8,7 @@ const HomeCrumb = () => {
   const { t } = useTranslation()
 
   return (
-    <Link href="/Public">
+    <Link href="/">
       <a className="flex items-center">
         <FontAwesomeIcon className="h-3 w-3" icon={['far', 'flag']} />
         <span className="ml-2 font-medium">{t('Home')}</span>
