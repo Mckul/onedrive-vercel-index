@@ -175,7 +175,7 @@ const FileListing: FC<{ query?: ParsedUrlQuery }> = ({ query }) => {
       if (error.status === 500) {
         return (
             <PreviewContainer>
-              {error.status === 500 ? <Auth redirect={path} /> : <WrongLink errorMsg={JSON.stringify(error.message)} />}
+             <WrongLink errorMsg={JSON.stringify(error.message)} />
             </PreviewContainer>
           )
       }
