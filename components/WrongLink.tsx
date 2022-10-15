@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { Trans } from 'next-i18next'
 
-const wrongLink: React.FC<{ errorMsg: string }> = ({ errorMsg }) => {
+const WrongLink: React.FC<{ errorMsg: string }> = ({ errorMsg }) => {
   return (
     <div className="my-12">
       <div className="mx-auto w-1/3">
@@ -19,4 +19,4 @@ const wrongLink: React.FC<{ errorMsg: string }> = ({ errorMsg }) => {
   )
 }
 
-export default wrongLink
+export default WrongLink
