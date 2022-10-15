@@ -24,6 +24,7 @@ import {
 import { layouts } from './SwitchLayout'
 import Loading, { LoadingIcon } from './Loading'
 import FourOhFour from './FourOhFour'
+import wrongLink from './wrongLink'
 import Auth from './Auth'
 import TextPreview from './previews/TextPreview'
 import MarkdownPreview from './previews/MarkdownPreview'
@@ -171,6 +172,14 @@ const FileListing: FC<{ query?: ParsedUrlQuery }> = ({ query }) => {
       return <div />
     }
 
+    if (error.status === 500) {
+        return (
+            <PreviewContainer>
+              {error.status === 500 ? <Auth redirect={path} /> : <wrongLink errorMsg={JSON.stringify(error.message)} />}
+            </PreviewContainer>
+          )
+      }
+    
     return (
       <PreviewContainer>
         {error.status === 401 ? <Auth redirect={path} /> : <FourOhFour errorMsg={JSON.stringify(error.message)} />}
