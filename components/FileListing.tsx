@@ -175,7 +175,7 @@ const FileListing: FC<{ query?: ParsedUrlQuery }> = ({ query }) => {
       if (error.status === 500) {
         return (
             <PreviewContainer>
-             <WrongLink errorMsg={JSON.stringify(error.message)} />
+             <FourOhFour errorMsg={JSON.stringify(error.message)} />
             </PreviewContainer>
           )
       }
